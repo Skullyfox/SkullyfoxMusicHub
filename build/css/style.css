@@ -73,11 +73,12 @@ body {
         align-items: center;
         height: 100%;
         width: 50%;
-        background-color: #43a047;
+        background-color: #2979ff;
         color: #eeeeee; }
         .appContainer .appContent .player .controler i {
           font-size: 5vw;
-          margin: 0px 1vw; }
+          margin: 0px 1vw;
+          transition: display 0.3s; }
           .appContainer .appContent .player .controler i:hover {
             color: #1c313a;
             cursor: pointer; }
@@ -167,5 +168,11 @@ body {
 .hideright {
   -webkit-animation: hideright 1s forwards;
           animation: hideright 1s forwards; }
+
+.active {
+  display: block; }
+
+.hidden {
+  display: none; }
 
 /*# sourceMappingURL=style.css.map */

@@ -4,6 +4,8 @@ const   coverContent = document.querySelector('.albumPic'),
         coverContentChild = coverContent.querySelectorAll('div'),
         previous = document.querySelector('#previous'),
         next = document.querySelector('#next'),
+        play = document.querySelector('#play'),
+        pause = document.querySelector('#pause'),
         musicTitleDiv = document.querySelector('.musicTitle'),
         musicTitle = [
             "Born to Die",
@@ -27,6 +29,8 @@ previous.addEventListener('click', () => {
         previousCover.classList.add('showleft');
         currentCover.classList.add('hideright');
         musicTitleDiv.innerText = musicTitle[currentTrackIndex - 1];
+        
+        
 
 
         --currentTrackIndex;
