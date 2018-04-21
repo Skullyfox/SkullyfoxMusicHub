@@ -1,0 +1,90 @@
+.appContainer
+    height: 100vh
+    width: 100%
+    background: linear-gradient(135deg,$primary-l 0% ,$white 150%);
+    padding: 5% 0% 0% 0%
+
+    .appContent
+        position: relative
+
+        height: 100%
+        width: 100%
+
+        display: flex
+        flex-direction: column
+        justify-content: flex-start
+        align-items: center
+
+        .musicTitle
+            padding: 0
+            margin: 0
+            font-size: 3em
+            color: $primary-d
+
+        .musicArtist
+            padding: 0
+            margin: 0
+            font-size: 1.5em
+            color: $primary-d
+
+        .albumPic
+            position: relative
+
+            display: flex
+            flex-direction: row
+
+            overflow: hidden
+
+            height: 300px
+            width: 300px
+
+            box-shadow: 5px 5px 5px rgba($black, 0.2)
+
+            .albumCover
+                position: absolute
+                width: 100%
+                height: 100%
+                transition: transform 1s
+
+            #ac1
+                background-image: url('../img/albumCover.png')
+                background-position: center
+                background-size: cover
+
+                transform: translate(0%,0%)
+
+            #ac2
+                background-image: url('../img/albumCover.png')
+                background-position: center
+                background-size: cover
+
+                transform: translate(100%,0%)
+        
+        .player
+            position: absolute
+            bottom: 0
+            left: 0
+
+            display: flex
+            flex-direction: row
+            justify-content: center
+
+            height: 10vh
+            width: 100%
+
+            background-color: $primary-d
+            box-shadow: 0px -3px 5px rgba($black, 0.2)
+
+            .controler
+                position: relative
+
+                display: flex
+                flex-direction: row
+                justify-content: center
+                align-items: center
+
+                height: 100%
+                width: 50%
+
+                background-color: $secondary-l
+                color: $white

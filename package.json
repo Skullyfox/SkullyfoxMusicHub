@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "hover.css": "^2.3.1",
+    "jquery": "^3.3.1",
     "npm": "^5.8.0"
   }
 }

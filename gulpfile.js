@@ -22,6 +22,12 @@ gulp.task('build-sass', () => {
         }))
 });
 
+gulp.task('concat-js', () =>{
+    return gulp.src(['src/js/**/*.js'])
+        .pipe(concat('main.js'))
+        .pipe(gulp.dest('build/js'))
+});
+
 gulp.task('browserSync', function(){
     browserSync({
         server: {
@@ -32,6 +38,7 @@ gulp.task('browserSync', function(){
 
 gulp.task('start', ['browserSync', 'build-sass'], function(){
     gulp.watch('src/scss/*',['build-sass']);
+    gulp.watch('src/js/**/*.js',['concat-js'])
     gulp.watch('./*.html', browserSync.reload);
     gulp.watch('build/js/*.js', browserSync.reload);
 });
