@@ -147,6 +147,10 @@ body {
     -webkit-transform: translateX(100%);
             transform: translateX(100%); } }
 
+.initialPosRight {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%); }
+
 .showleft {
   -webkit-animation: showleft 1s forwards;
           animation: showleft 1s forwards; }

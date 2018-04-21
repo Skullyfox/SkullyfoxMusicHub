@@ -41,6 +41,7 @@ next.addEventListener('click', () => {
         let nextCover = coverContentChild[currentTrackIndex + 1],
             currentCover = coverContentChild[currentTrackIndex];
 
+        nextCover.classList.remove('initialPosRight');
         nextCover.classList.remove('hideright');
         nextCover.classList.add('showright');
         currentCover.classList.add('hideleft');
