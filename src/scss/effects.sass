@@ -1,13 +1,11 @@
 @keyframes showleft
     from
-        transition: transform 1s
         transform: translateX(-100%)
     to
         transform: none
 
 @keyframes showright
     from
-        transition: transform 1s
         transform: translateX(100%)
     to
         transform: none
@@ -16,24 +14,22 @@
     from
         transform: none
     to
-        transition: transform 1s
         transform: translateX(-100%)
 
 @keyframes hideright
     from
         transform: none
     to
-        transition: transform 1s
         transform: translateX(100%)
 
 .showleft
-    animation: showleft forwards
+    animation: showleft 1s forwards
 
 .showright
-    animation: showright forwards
+    animation: showright 1s forwards
 
 .hideleft
-    animation: hideleft forwards
-    
+    animation: hideleft 1s forwards
+
 .hideright
-    animation: hideright forwards
+    animation: hideright 1s forwards
