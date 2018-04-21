@@ -1,0 +1,39 @@
+@keyframes showleft
+    from
+        transition: transform 1s
+        transform: translateX(-100%)
+    to
+        transform: none
+
+@keyframes showright
+    from
+        transition: transform 1s
+        transform: translateX(100%)
+    to
+        transform: none
+
+@keyframes hideleft
+    from
+        transform: none
+    to
+        transition: transform 1s
+        transform: translateX(-100%)
+
+@keyframes hideright
+    from
+        transform: none
+    to
+        transition: transform 1s
+        transform: translateX(100%)
+
+.showleft
+    animation: showleft forwards
+
+.showright
+    animation: showright forwards
+
+.hideleft
+    animation: hideleft forwards
+    
+.hideright
+    animation: hideright forwards
