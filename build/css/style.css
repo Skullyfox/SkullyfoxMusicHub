@@ -80,6 +80,8 @@ body {
           .appContainer .appContent .player .controler i:hover {
             color: #1c313a;
             cursor: pointer; }
+          .appContainer .appContent .player .controler i:focus {
+            color: #eeeeee; }
 
 @-webkit-keyframes showleft {
   from {
