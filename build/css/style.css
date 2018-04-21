@@ -79,7 +79,12 @@ body {
         align-items: center;
         height: 100%;
         width: 50%;
-        background-color: #ff8a50;
+        background-color: #43a047;
         color: #eeeeee; }
+        .appContainer .appContent .player .controler i {
+          font-size: 3em; }
+          .appContainer .appContent .player .controler i:hover {
+            color: #1c313a;
+            cursor: pointer; }
 
 /*# sourceMappingURL=style.css.map */
