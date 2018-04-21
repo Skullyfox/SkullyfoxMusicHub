@@ -1,11 +1,18 @@
 "use strict"
 
-const coverContent = document.querySelector('.albumPic'),
-    coverContentChild = coverContent.querySelectorAll('div'),
-    previous = document.querySelector('#previous'),
-    next = document.querySelector('#next');
+const   coverContent = document.querySelector('.albumPic'),
+        coverContentChild = coverContent.querySelectorAll('div'),
+        previous = document.querySelector('#previous'),
+        next = document.querySelector('#next'),
+        musicTitleDiv = document.querySelector('.musicTitle'),
+        musicTitle = [
+            "Born to Die",
+            "Bounce"
+        ];
 
 let currentTrackIndex = 0;
+
+musicTitleDiv.innerText = musicTitle[0];
 
 /* Previous Button Click */
 
@@ -19,6 +26,8 @@ previous.addEventListener('click', () => {
         previousCover.classList.remove('hideleft');
         previousCover.classList.add('showleft');
         currentCover.classList.add('hideright');
+        musicTitleDiv.innerText = musicTitle[currentTrackIndex - 1];
+
 
         --currentTrackIndex;
 
@@ -45,6 +54,7 @@ next.addEventListener('click', () => {
         nextCover.classList.remove('hideright');
         nextCover.classList.add('showright');
         currentCover.classList.add('hideleft');
+        musicTitleDiv.innerText = musicTitle[currentTrackIndex+1];
 
         ++currentTrackIndex;
 
