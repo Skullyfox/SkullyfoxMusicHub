@@ -4,16 +4,20 @@ const   coverContent = document.querySelector('.albumPic'),
         coverContentChild = coverContent.querySelectorAll('div'),
         previous = document.querySelector('#previous'),
         next = document.querySelector('#next'),
-        play = document.querySelector('#play'),
-        pause = document.querySelector('#pause'),
         musicTitleDiv = document.querySelector('.musicTitle'),
+        musicPlayStatutContent = document.querySelector('.playPause'),
         musicTitle = [
             "Born to Die",
             "Bounce"
+        ],
+        musicPlayStatutIcon = [
+            "play_circle_outline",
+            "pause_circle_outline"
         ];
 
 let currentTrackIndex = 0;
 
+musicPlayStatutContent.innerText = musicPlayStatutIcon[0]
 musicTitleDiv.innerText = musicTitle[0];
 
 /* Previous Button Click */
@@ -72,4 +76,16 @@ next.addEventListener('click', () => {
 
     return currentTrackIndex;
 
+});
+
+/* Play/Pause Button Click */
+
+musicPlayStatutContent.addEventListener('click', () => {
+    let playing = musicPlayStatutContent.innerText == musicPlayStatutIcon[0];
+
+    if(playing){
+        musicPlayStatutContent.innerText = musicPlayStatutIcon[1];
+    }else{
+        musicPlayStatutContent.innerText = musicPlayStatutIcon[0];
+    }
 });

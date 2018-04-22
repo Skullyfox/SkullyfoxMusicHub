@@ -76,7 +76,7 @@ body {
         background-color: #2979ff;
         color: #eeeeee; }
         .appContainer .appContent .player .controler i {
-          font-size: 5vw;
+          font-size: 4.5vw;
           margin: 0px 1vw;
           transition: display 0.3s; }
           .appContainer .appContent .player .controler i:hover {
